@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<persons>
+    <person name="无名氏1" age="28">
+        <career>民工</career>
+        <interests>
+            <interest>编程</interest>
+            <interest>打球</interest>
+        </interests>
+    </person>
+    <person name="无名氏2" age="17">
+        <career>民工</career>
+        <interests>
+            <interest>编程</interest>
+            <interest>打球</interest>
+        </interests>
+    </person>
+</persons>
