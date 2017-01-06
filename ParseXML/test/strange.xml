@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stats>
+  <Flowcell flowcell-id="H5KFNALXX">
+    <Lane number="1">
+      <TopUnknownBarcodes>
+        <Barcode count="485251617" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="2">
+      <TopUnknownBarcodes>
+        <Barcode count="484826188" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="3">
+      <TopUnknownBarcodes>
+        <Barcode count="490443589" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="4">
+      <TopUnknownBarcodes>
+        <Barcode count="490139111" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="5">
+      <TopUnknownBarcodes>
+        <Barcode count="494082517" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="6">
+      <TopUnknownBarcodes>
+        <Barcode count="484730243" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="7">
+      <TopUnknownBarcodes>
+        <Barcode count="481683373" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+    <Lane number="8">
+      <TopUnknownBarcodes>
+        <Barcode count="483949318" sequence="unknown"/>
+      </TopUnknownBarcodes>
+    </Lane>
+  </Flowcell>
+</Stats>
