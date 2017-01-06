@@ -86,11 +86,10 @@ func main() {
 					}
 
 					for _, lanes := range barcodes.Lane {
-						fmt.Printf("\t\t\t\t[Lane:Count]:%s\t%b\n", barcodes.Name, barcodes.Lane)
+						fmt.Printf("\t\t\t\t[Lane:Count]:%s\t%b\n", barcodes.Name, lanes.BarcodeCount)
 						if (len(lanes.Number)) == 0 {
 							continue
 						}
-
 					}
 				}
 			}
