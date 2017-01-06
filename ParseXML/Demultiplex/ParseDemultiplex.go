@@ -61,7 +61,6 @@ func main() {
 
 	//print xml table
 	for _, flowcell := range v.Flowcell {
-		//fmt.Printf("%s\n",flowcell)
 		fmt.Printf("[Flowcell]:%s\n", flowcell.FlowcellID)
 		if (len(flowcell.FlowcellID)) == 0 {
 			continue
