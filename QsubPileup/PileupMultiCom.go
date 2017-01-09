@@ -13,12 +13,11 @@ import (
 func main() {
 	hostname, err := os.Hostname()
 	check(err)
-	fmt.Printf("%s", hostname)
 
 	user, err := user.Current()
 	username := user.Username
 	check(err)
-	fmt.Printf("%s\n", username)
+
 	bio := bufio.NewReader(os.Stdin)
 	x := 0
 	for {
@@ -27,7 +26,6 @@ func main() {
 		if line == "" {
 			break
 		}
-		fmt.Println(line)
 		qsub(line, hostname, username, x)
 	}
 }
