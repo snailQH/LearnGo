@@ -19,14 +19,18 @@ func main() {
 	check(err)
 
 	bio := bufio.NewReader(os.Stdin)
+
+	curDir, err := filepath.Abs(filepath.Dir(os.Args[0])) //this line get the dir of this program,not the Current working dir
+	check(err)
+
 	x := 0
 	for {
 		x++
-		line, _ := bio.ReadString('\n')
+		line, _ := bio.ReadString('\n') //read in the stdin,seperator "\n"
 		if line == "" {
 			break
 		}
-		qsub(line, hostname, username, x)
+		qsub(line, hostname, username, curDir, x)
 	}
 }
 
@@ -36,17 +40,18 @@ func check(e error) {
 	}
 }
 
-func qsub(s string, hostname string, user string, id int) {
+func qsub(s string, hostname string, user string, curDir string, id int) {
 	strid := fmt.Sprintf("%d", id)
-	err := os.MkdirAll("./Pileup_pbs", 0755)
+
+	pbsDir := curDir + "/Pileup_pbs"
+	err := os.MkdirAll(pbsDir, 0755)
 	check(err)
-	curDir, err := filepath.Abs(filepath.Dir(os.Args[0]))
-	check(err)
+
 	filename := curDir + "/Pileup_pbs/Pileup_" + strid + ".pbs"
+	fmt.Println("qsub ", filename)
 	outpbs, err := os.OpenFile(filename, os.O_WRONLY|os.O_CREATE, 0755)
 	check(err)
 	defer outpbs.Close()
-
 	outWriter := bufio.NewWriter(outpbs)
 
 	//those are the header of pbs file
