@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"./bitarray"
 	"./point"
 )
 
@@ -11,4 +12,6 @@ func main() {
 	q := point.Point{4, 6}
 	fmt.Println(point.Distance(p, q))
 	fmt.Println(p.Distance(q))
+
+	bitarray.Test()
 }

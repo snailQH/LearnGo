@@ -21,6 +21,6 @@ func (p Point) Distance(q Point) float64 {
 func main() {
 	p := Point{1, 2}
 	q := Point{4, 6}
-	fmt.Println(Distance(p, q))
-	fmt.Println(p.Distance(q))
+	fmt.Println(Distance(p, q)) //print 4.47213595499958
+	fmt.Println(p.Distance(q))  //print 5
 }
